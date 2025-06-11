@@ -1,0 +1,120 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #2c3e50;
+}
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+.location {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+.contact-icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+section {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+h3 {
+    color: #34495e;
+    margin-bottom: 5px;
+}
+.job {
+    margin-bottom: 20px;
+}
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.company {
+    font-weight: bold;
+}
+.period {
+    color: #7f8c8d;
+    font-style: italic;
+}
+.location {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 8px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skill-category {
+    flex: 1;
+    min-width: 250px;
+}
+.publication {
+    margin-bottom: 15px;
+}
+.publication-title {
+    font-weight: bold;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.emoji {
+    font-size: 1.2em;
+}
+.divider {
+    height: 1px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+}
