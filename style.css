@@ -71,7 +71,7 @@ h3 {
 /* Стиль кнопки (лейбла) */
 .toggle-label {
   cursor: pointer;
-  color: blue;
+  color: #7f8c8d;
   text-decoration: underline;
 }
 
@@ -86,7 +86,7 @@ h3 {
 /* Показываем текст при нажатии на чекбокс */
 .toggle-checkbox:checked ~ .hidden-text {
   display: block;
-  color: #7f8c8d
+
 }
 
 /* Меняем текст кнопки при открытии */
