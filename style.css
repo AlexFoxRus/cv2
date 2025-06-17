@@ -68,28 +68,44 @@ h3 {
   display: none;
 }
 
-/* Стиль кнопки (лейбла) */
+/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) */
 .toggle-label {
   cursor: pointer;
-  color: #7f8c8d;
-  text-decoration: underline;
+  color: #7f8c8d; /* Серо-голубой цвет */
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 1px solid #7f8c8d;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: all 0.3s;
+}
+
+/* Изменение стиля кнопки при наведении */
+.toggle-label:hover {
+  background: #ecf0f1;
 }
 
 /* Скрытый текст (по умолчанию невидим) */
 .hidden-text {
   display: none;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 10px;
   background: #f0f0f0;
+  border-left: 3px solid #7f8c8d;
 }
 
-/* Показываем текст при нажатии на чекбокс */
+/* Показываем текст при нажатии */
 .toggle-checkbox:checked ~ .hidden-text {
   display: block;
-
 }
 
-/* Меняем текст кнопки при открытии */
+/* Меняем иконку и стиль кнопки при открытии */
+.toggle-checkbox:checked ~ .toggle-label {
+  color: #34495e; /* Темно-серый цвет */
+  border-color: #34495e;
+}
 .toggle-checkbox:checked ~ .toggle-label::after {
   content: " ▲";
 }
