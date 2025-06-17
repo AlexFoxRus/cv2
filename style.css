@@ -64,312 +64,89 @@ h3 {
     margin-bottom: 5px;
 }
 
-/*техинком*/
-/* Скрываем чекбокс техинком*/
-.toggle-checkbox-teh {
+
+    /* Скрываем чекбокс */
+    /*.toggle-checkbox {
+      display: none;
+    }*/
+    
+    /* Стиль кнопки (цвет текста #7f8c8d и другие настройки) */
+    /*.toggle-label {
+      cursor: pointer;
+      color: #7f8c8d; 
+      font-weight: bold;
+      display: inline-block;
+      margin: 5px 0;
+      padding: 5px 10px;
+      border: 1px solid #7f8c8d;
+      border-radius: 4px;
+      background: #f9f9f9;
+      transition: all 0.3s;
+    }
+    
+    /* Изменение стиля кнопки при наведении */
+    /*.toggle-label:hover {
+      background: #ecf0f1;
+    }
+    
+    /* Скрытый текст (по умолчанию невидим) */
+    /*.hidden-text {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background: #f0f0f0;
+      border-left: 3px solid #7f8c8d;
+    }
+    
+    /* Показываем текст при нажатии  */
+    /*.toggle-checkbox:checked ~ .hidden-text {
+      display: block;
+    }
+    
+    /* Меняем иконку и стиль кнопки при открытии  */
+    /*.toggle-checkbox:checked ~ .toggle-label {
+      color: #34495e;
+      border-color: #34495e;
+    }*/
+    /*.toggle-checkbox:checked ~ .toggle-label::after {
+      content: " ▲";
+    }
+    .toggle-label::after {
+      content: " ▼";
+    }*/ 
+/* Скрываем чекбокс */
+.toggle-checkbox {
   display: none;
 }
 
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) техинком*/
-.toggle-label-teh {
+/* Стиль кнопки (лейбла) */
+.toggle-label {
   cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
+  color: blue;
+  text-decoration: underline;
 }
 
-/* Изменение стиля кнопки при наведениитехинком */
-.toggle-label-teh:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)техинком */
-.hidden-text-teh {
+/* Скрытый текст (по умолчанию невидим) */
+.hidden-text {
   display: none;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10px;
   background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
 }
 
-/* Показываем текст при нажатии техинком */
-.toggle-checkbox-teh:checked ~ .hidden-text-teh {
+/* Показываем текст при нажатии на чекбокс */
+.toggle-checkbox:checked ~ .hidden-text {
   display: block;
 }
 
-/* Меняем иконку и стиль кнопки при открытии техинком */
-.toggle-checkbox-teh:checked ~ .toggle-label-teh {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-teh:checked ~ .toggle-label-teh::after {
+/* Меняем текст кнопки при открытии */
+.toggle-checkbox:checked ~ .toggle-label::after {
   content: " ▲";
 }
-.toggle-label-teh::after {
+.toggle-label::after {
   content: " ▼";
 }
-
-/* гидраверс*/
-/* Скрываем чекбокс гидраверс*/
-.toggle-checkbox-gid {
-  display: none;
-}
-
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) гидраверс*/
-.toggle-label-gid {
-  cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
-}
-
-/* Изменение стиля кнопки при наведении гидраверс */
-.toggle-label-gid:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)гидраверс */
-.hidden-text-gid {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
-}
-
-/* Показываем текст при нажатии гидраверс */
-.toggle-checkbox-gid:checked ~ .hidden-text-gid {
-  display: block;
-}
-
-/* Меняем иконку и стиль кнопки при открытии гидраверс */
-.toggle-checkbox-gid:checked ~ .toggle-label-gid {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-gid:checked ~ .toggle-label-gid::after {
-  content: " ▲";
-}
-.toggle-label-gid::after {
-  content: " ▼";
-}
-
-/* гарписк*/
-/* Скрываем чекбокс гарписк*/
-.toggle-checkbox-gar {
-  display: none;
-}
-
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) гарписк*/
-.toggle-label-gar {
-  cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
-}
-
-/* Изменение стиля кнопки при наведении гарписк */
-.toggle-label-gar:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)гарписк */
-.hidden-text-gar {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
-}
-
-/* Показываем текст при нажатии гарписк */
-.toggle-checkbox-gar:checked ~ .hidden-text-gar {
-  display: block;
-}
-
-/* Меняем иконку и стиль кнопки при открытии гарписк */
-.toggle-checkbox-gar:checked ~ .toggle-label-gar {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-gar:checked ~ .toggle-label-gar::after {
-  content: " ▲";
-}
-.toggle-label-gar::after {
-  content: " ▼";
-}
-
-/* планета*/
-/* Скрываем чекбокс планета*/
-.toggle-checkbox-plan {
-  display: none;
-}
-
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) планета*/
-.toggle-label-plan {
-  cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
-}
-
-/* Изменение стиля кнопки при наведении планета */
-.toggle-label-plan:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)планета */
-.hidden-text-plan {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
-}
-
-/* Показываем текст при нажатии планета */
-.toggle-checkbox-plan:checked ~ .hidden-text-plan {
-  display: block;
-}
-
-/* Меняем иконку и стиль кнопки при открытии планета */
-.toggle-checkbox-plan:checked ~ .toggle-label-plan {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-plan:checked ~ .toggle-label-plan::after {
-  content: " ▲";
-}
-.toggle-label-plan::after {
-  content: " ▼";
-}
-
-/* фриланс*/
-/* Скрываем чекбокс фриланс*/
-.toggle-checkbox-fri {
-  display: none;
-}
-
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) фриланс*/
-.toggle-label-fri {
-  cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
-}
-
-/* Изменение стиля кнопки при наведении фриланс */
-.toggle-label-fri:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)фриланс */
-.hidden-text-fri {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
-}
-
-/* Показываем текст при нажатии фриланс */
-.toggle-checkbox-fri:checked ~ .hidden-text-fri {
-  display: block;
-}
-
-/* Меняем иконку и стиль кнопки при открытии фриланс */
-.toggle-checkbox-fri:checked ~ .toggle-label-fri {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-fri:checked ~ .toggle-label-fri::after {
-  content: " ▲";
-}
-.toggle-label-fri::after {
-  content: " ▼";
-}
-
-/* фриланс*/
-/* Скрываем чекбокс фриланс*/
-.toggle-checkbox-fri {
-  display: none;
-}
-
-/* Стиль кнопки (цвет текста #7f8c8d и другие настройки) фриланс*/
-.toggle-label-fri {
-  cursor: pointer;
-  color: #7f8c8d; /* Серо-голубой цвет */
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border: 1px solid #7f8c8d;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: all 0.3s;
-}
-
-/* Изменение стиля кнопки при наведении фриланс */
-.toggle-label-fri:hover {
-  background: #ecf0f1;
-}
-
-/* Скрытый текст (по умолчанию невидим)фриланс */
-.hidden-text-fri {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #f0f0f0;
-  border-left: 3px solid #7f8c8d;
-}
-
-/* Показываем текст при нажатии фриланс */
-.toggle-checkbox-fri:checked ~ .hidden-text-fri {
-  display: block;
-}
-
-/* Меняем иконку и стиль кнопки при открытии фриланс */
-.toggle-checkbox-fri:checked ~ .toggle-label-fri {
-  color: #34495e; /* Темно-серый цвет */
-  border-color: #34495e;
-}
-.toggle-checkbox-fri:checked ~ .toggle-label-fri::after {
-  content: " ▲";
-}
-.toggle-label-fri::after {
-  content: " ▼";
-}
-
+   
 .job {
     margin-bottom: 20px;
 }
