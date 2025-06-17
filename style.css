@@ -63,9 +63,37 @@ h3 {
     color: #34495e;
     margin-bottom: 5px;
 }
+/* Скрываем чекбокс */
+.toggle-checkbox {
+  display: none;
+}
 
-.transparent {
-  opacity: 0;
+/* Стиль кнопки (лейбла) */
+.toggle-label {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Скрытый текст (по умолчанию невидим) */
+.hidden-text {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+/* Показываем текст при нажатии на чекбокс */
+.toggle-checkbox:checked ~ .hidden-text {
+  display: block;
+}
+
+/* Меняем текст кнопки при открытии */
+.toggle-checkbox:checked ~ .toggle-label::after {
+  content: " ▲";
+}
+.toggle-label::after {
+  content: " ▼";
 }
 .job {
     margin-bottom: 20px;
