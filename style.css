@@ -166,3 +166,139 @@ a:hover {
     margin: 20px 0;
 }
 
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    backdrop-filter: blur(8px);
+}
+.hero {
+    padding-top: 24px;
+}
+.hero-role {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+.name-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.button-primary {
+    background-color: #3498db;
+    color: white;
+}
+.button-secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+.summary-lead {
+    font-size: 18px;
+    color: #2c3e50;
+}
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+.highlight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #e6eef5;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+}
+.highlight-card strong {
+    font-size: 28px;
+    color: #2c3e50;
+}
+.clean-list {
+    padding-left: 20px;
+}
+.section-intro {
+    color: #5b6770;
+}
+.coming-soon {
+    color: #7f8c8d;
+    font-style: italic;
+}
+.final-cta {
+    border: 2px solid #d6eaf8;
+}
+.top-nav a:focus-visible,
+a:focus-visible,
+.button:focus-visible,
+.expand-toggle + label:focus-visible {
+    outline: 3px solid #3498db;
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .photo {
+        width: 120px;
+        height: 120px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .job-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .hero-role {
+        font-size: 18px;
+    }
+    .name-text,
+    .summary-lead {
+        font-size: 16px;
+    }
+    section {
+        padding: 16px;
+    }
+}
